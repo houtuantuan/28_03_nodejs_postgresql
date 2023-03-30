@@ -23,7 +23,9 @@ router
       res.sendStatus(500)
     }
   })
-  .post('/', async (req, res) => {
+  .post('/', 
+  
+  async (req, res) => {
     try {
       const body = req.body
       const data = await pool.query(
